@@ -1,8 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  // Set an initial active menu item
-  activeItem: { id: 'default', title: 'Default', iconName: 'FiPieChart' },
+    activeItem: { id: 'default', title: 'Default', iconName: 'FiPieChart' },
 };
 
 export const navigationSlice = createSlice({

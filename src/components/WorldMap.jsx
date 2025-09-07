@@ -26,7 +26,7 @@ export default function WorldMap() {
               <Geography
                 key={geo.rsmKey}
                 geography={geo}
-                className="fill-gray-200 stroke-gray-300 dark:fill-gray-700 dark:stroke-gray-600"
+                className="fill-gray-200 stroke-gray-300 dark:fill-gray-700 dark:stroke-gray-700"
               />
             ))
           }

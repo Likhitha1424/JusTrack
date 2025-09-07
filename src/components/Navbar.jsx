@@ -38,7 +38,7 @@ export default function Navbar({
 
   return (
     <>
-      <nav className="flex items-center justify-between px-6 py-3 border-b border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-900 text-gray-700 dark:text-gray-300">
+      <nav className="flex flex-wrap items-center justify-between px-4 py-3 border-b border-gray-300 bg-white dark:border-gray-700 dark:bg-black text-gray-700 dark:text-gray-300">
         <div className="flex items-center space-x-4">
           <FiGrid size={20} className="text-gray-500" />
           <button
@@ -62,7 +62,7 @@ export default function Navbar({
         </div>
 
         <div className="flex items-center space-x-4">
-          <div className="relative w-64">
+          <div className="relative w-full max-w-xs sm:w-64">
             <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500" />
             <input
               type="search"

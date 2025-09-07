@@ -6,7 +6,7 @@ export default function StatsCard({ title, value, change }) {
   return (
     <div
       className={`p-4 rounded-lg shadow-md
-        bg-white dark:bg-gray-800
+        bg-gray-100 dark:bg-gray-800
         text-gray-900 dark:text-gray-200
         `}
     >

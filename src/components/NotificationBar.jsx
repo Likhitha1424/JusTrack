@@ -1,4 +1,3 @@
-// src/components/NotificationBar.jsx
 import React from 'react';
 import {
   FiX,

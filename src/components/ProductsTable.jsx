@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ProductsTable({ products }) {
   return (
-    <div className="p-4 rounded-lg shadow-md bg-white dark:bg-gray-800">
+    <div className="p-10 rounded-lg shadow-md bg-gray-100 dark:bg-gray-900">
       <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-gray-50">Top Selling Products</h3>
       <table className="w-full text-left table-auto border-collapse">
         <thead>
@@ -19,7 +19,7 @@ export default function ProductsTable({ products }) {
             return (
               <tr
                 key={idx}
-                className={idx % 2 === 0 ? 'bg-gray-50 dark:bg-gray-900' : 'bg-white dark:bg-gray-800'}
+                className={idx % 2 === 0 ? 'bg-gray-50 dark:bg-black' : 'bg-white dark:bg-gray-800'}
               >
                 <td className="border-b border-gray-200 dark:border-gray-700 px-4 py-2 text-gray-800 dark:text-gray-200">{name}</td>
                 <td className="border-b border-gray-200 dark:border-gray-700 px-4 py-2 text-gray-800 dark:text-gray-200">${price.toFixed(2)}</td>

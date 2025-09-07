@@ -3,7 +3,7 @@ import { FiZap } from 'react-icons/fi';
 
 const DigitalCircuitLoader = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-50 dark:bg-black transition-colors duration-500">
       <div className="relative flex items-center justify-center w-48 h-48">
         <FiZap className="text-blue-500 dark:text-blue-400 text-6xl z-10 animate-pulse" />
 

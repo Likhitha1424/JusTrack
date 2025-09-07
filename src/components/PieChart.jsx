@@ -44,9 +44,9 @@ const CustomLabel = ({ viewBox, percent }) => {
 
 export default function TotalSalesDoughnutChart() {
   return (
-    <div className="w-full max-w-md p-6 rounded-xl shadow-lg bg-white text-neutral-900 dark:bg-neutral-900 dark:text-white font-sans transition-colors duration-300">
-      <h2 className="text-lg sm:text-xl font-semibold mb-6">Total Sales</h2>
-      <div className="w-full h-56 sm:h-64">
+    <div className="w-full h-full p-4 rounded-xl shadow-lg bg-gray-100 text-neutral-900 dark:bg-gray-900 dark:text-white font-sans transition-colors duration-300">
+      <h2 className="text-lg sm:text-xl font-semibold mb-4">Total Sales</h2>
+      <div className="w-full h-32">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie
@@ -59,14 +59,14 @@ export default function TotalSalesDoughnutChart() {
               outerRadius="70%"
               paddingAngle={5}
               label={({ name, percent }) => {
-                if (name === 'Affiliate') {
-                  return (
-                    <CustomLabel
-                      percent={percent}
-                      viewBox={{ cx: 150, cy: 120 }}
-                    />
-                  );
-                }
+                // if (name === 'Affiliate') {
+                //   return (
+                //     // <CustomLabel
+                //     //   percent={percent}
+                //     //   viewBox={{ cx: 150, cy: 120 }}
+                //     // />
+                //   );
+                // }
                 return null;
               }}
               labelLine={false}

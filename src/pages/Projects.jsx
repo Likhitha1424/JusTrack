@@ -123,7 +123,7 @@ export default function Projects() {
 
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 p-8 font-[Poppins] text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen bg-white dark:bg-black p-8 font-[Poppins] text-gray-900 dark:text-gray-100">
       <div className="flex flex-col mb-3">
         <h2 className="text-xl font-semibold mb-4">Order List</h2>
 
@@ -192,7 +192,7 @@ export default function Projects() {
 
       <div className="overflow-x-auto"> 
         <table className="min-w-full text-sm ">
-          <thead className="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 font-semibold">
+          <thead className="bg-white dark:bg-black text-gray-700 dark:text-gray-200 font-semibold">
             <tr>
               <th className="py-3 px-4 whitespace-nowrap">
                 <button onClick={handleSelectAll} aria-label="Select All">

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { fetchDashboardData } from './features/dashboardSlice';
-
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import Projects from './pages/Projects';
 import UnderDevelopment from './pages/UnderDevelopment';
+import NotificationBar from './components/NotificationBar';
 
 const pageComponents = {
   projects: <Projects />,
@@ -43,7 +43,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex h-screen text-gray-300 bg-gray-900 dark:bg-gray-900 dark:text-gray-300">
+      <div className="flex h-screen text-gray-300 bg-gray-900 dark:bg-black dark:text-gray-300">
         <Sidebar
           sidebarOpen={sidebarOpen}
           setSidebarOpen={setSidebarOpen}
@@ -60,14 +60,14 @@ function App() {
             setNotificationsOpen={setNotificationsOpen}
           />
 
-          <main className="flex overflow-auto p-6 space-x-6 bg-white dark:bg-gray-900">
+          <main className="flex overflow-auto p-6 space-x-6 bg-white dark:bg-black">
             <div className="flex-1">
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/ecommerce" element={<UnderDevelopment title="eCommerce" />} />
                 <Route path="/user-profile" element={<UnderDevelopment title="User Profile" />} />
-                <Route path="/overview" element={<UnderDevelopment title="Overview" />} />
+                <Route path="/overview" element={<Dashboard />} />
                 <Route path="/campaigns" element={<UnderDevelopment title="Campaigns" />} />
                 <Route path="/documents" element={<UnderDevelopment title="Documents" />} />
                 <Route path="/followers" element={<UnderDevelopment title="Followers" />} />
@@ -80,7 +80,7 @@ function App() {
             </div>
 
             {notificationsOpen && (
-              <NotificationsPanel setNotificationsOpen={setNotificationsOpen} />
+              <NotificationBar setNotificationsOpen={setNotificationsOpen} />
             )}
           </main>
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 export default function ProjectionBarChart({ data }) {
   if (!data || !data.labels || !data.projections || !data.actuals) {
     return (
-      <div className="p-4 rounded-lg shadow-md bg-gray-100 dark:bg-gray-900">
+      <div className="p-4 rounded-lg shadow-md bg-gray-100 dark:bg-black">
         <h3 className="mb-2 text-lg font-semibold text-gray-800 dark:text-gray-200">
           Projections vs Actuals
         </h3>

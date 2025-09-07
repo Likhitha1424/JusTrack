@@ -1,10 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-// Simulate async fetch with dummy data
 export const fetchDashboardData = createAsyncThunk(
   'dashboard/fetchDashboardData',
   async () => {
-    // You can replace this with real API call if needed
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({
