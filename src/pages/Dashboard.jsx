@@ -74,15 +74,19 @@ export default function Dashboard() {
           </ul>
         </div>
       </div>
+<div className="grid grid-cols-1 lg:grid-cols-4 gap-6 auto-rows-fr">
+  <div className="col-span-1 lg:col-span-3">
+    <div className="h-full rounded-lg shadow-md bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-300 flex flex-col">
+      <ProductsTable products={products} />
+    </div>
+  </div>
+  <div className="col-span-1">
+    <div className="h-full rounded-lg shadow-md bg-gray-100 dark:bg-black text-gray-900 dark:text-gray-300 flex flex-col">
+      <SalesDonutChart data={totalSales} />
+    </div>
+  </div>
+</div>
 
-      <div className="grid grid-cols-4 gap-6">
-        <div className="col-span-3 h-full rounded-lg shadow-md bg-white dark:bg-black text-gray-900 dark:text-gray-300">
-          <ProductsTable products={products} />
-        </div>
-        <div className="col-span-1 h-full rounded-lg shadow-md bg-white dark:bg-black text-gray-900 dark:text-gray-300">
-          <SalesDonutChart data={totalSales} />
-        </div>
-      </div>
     </div>
   );
 }

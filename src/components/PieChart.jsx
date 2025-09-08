@@ -46,7 +46,7 @@ export default function TotalSalesDoughnutChart() {
   return (
     <div className="w-full h-full p-4 rounded-xl shadow-lg bg-gray-100 text-neutral-900 dark:bg-gray-900 dark:text-white font-sans transition-colors duration-300">
       <h2 className="text-lg sm:text-xl font-semibold mb-4">Total Sales</h2>
-      <div className="w-full h-32">
+     <div className="w-full h-48 sm:h-64">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie
